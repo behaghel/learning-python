@@ -1,0 +1,13 @@
+* Getting Started
+
+** Coding
+#+begin_src bash
+$ nix-shell
+$ poetry run main
+#+end_src
+
+** Building
+#+begin_src bash
+$ nix-build
+$ ./result/bin/main
+#+end_src

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "learning-python"
+version = "0.1.0"
+description = "Hubert's playground to learn Python"
+authors = ["Hubert Behaghel <behaghel@gmail.com>"]
+license = "MIT"
+readme = "README.org"
+packages = [{include = "learning_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^2.3.3"
+
+[tool.poetry.scripts]
+main = "learning_python:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
