@@ -4,7 +4,7 @@ let
   myAppEnv = pkgs.poetry2nix.mkPoetryEnv {
     projectDir = ./.;
     editablePackageSources = {
-      playground = ./playground;
+      learning-python = ./learning_python;
     };
     overrides = pkgs.poetry2nix.overrides.withDefaults (self: super: {
       werkzeug = super.werkzeug.overridePythonAttrs (

@@ -3,7 +3,7 @@ name = "learning-python"
 version = "0.1.0"
 description = "Hubert's playground to learn Python"
 authors = ["Hubert Behaghel <behaghel@gmail.com>"]
-license = "MIT"
+license = "GPLv3"
 readme = "README.org"
 packages = [{include = "learning_python"}]
 
@@ -13,6 +13,9 @@ Flask = "^2.3.3"
 
 [tool.poetry.scripts]
 main = "learning_python:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
