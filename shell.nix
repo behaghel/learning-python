@@ -26,4 +26,7 @@ let
 in
 myAppEnv.env.overrideAttrs (oldAttrs: {
   buildInputs = [ pkgs.poetry ];
+  shellHook = ''
+       export PATH="$(poetry env info --path)/bin:$PATH"
+'';
 })
